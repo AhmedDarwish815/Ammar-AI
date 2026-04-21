@@ -21,5 +21,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 # ── Step 3: Copy app code ──────────────────────────────────────────────────────
 COPY . .
 
-# ── Step 4: Run ───────────────────────────────────────────────────────────────
-CMD ["/bin/sh", "-c", "uvicorn app.api:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["python", "main.py"]
