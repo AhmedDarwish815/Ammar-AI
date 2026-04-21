@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.env
+node_modules/
+
+# ML model files (downloaded automatically at startup)
+yolov8n.pt
+*.tflite
+*.task
+
+# Virtual environment
+venv/
+.venv/
+
+# Logs
+*.csv
