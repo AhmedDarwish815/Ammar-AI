@@ -22,4 +22,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # ── Step 4: Run ───────────────────────────────────────────────────────────────
-CMD uvicorn app.api:app --host 0.0.0.0 --port ${PORT:-8000}
+CMD ["/bin/sh", "-c", "uvicorn app.api:app --host 0.0.0.0 --port ${PORT:-8000}"]
